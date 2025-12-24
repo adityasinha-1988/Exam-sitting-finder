@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUJ Exam Seating Portal</title>
-    <link rel="icon" href="C:\Users\Aditya\Downloads\Exam\logo.jpg" type="image/x-icon">
+    <link rel="icon" href="https://manipal.edu/content/dam/manipal/muj/images/favicon.ico" type="image/x-icon">
     <style>
         /* --- CSS STYLES --- */
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; display: flex; flex-direction: column; align-items: center; padding: 20px; min-height: 95vh; margin: 0; }
@@ -70,7 +70,7 @@
 
 <div class="main-wrapper">
     <div class="container">
-        <img src="C:\Users\Aditya\Downloads\Exam\logo.png" alt="Manipal University Jaipur" class="logo-img">
+        <img src="logo.png" alt="Manipal University Jaipur" class="logo-img">
         
         <h2>Exam Seating Search</h2>
         <input type="text" id="regInput" placeholder="Enter Registration No. (e.g., 229301029)">
@@ -110,6 +110,14 @@
     // ============================================================
     // STEP: YAHAN APNA DATA PASTE KAREIN (Jo Excel se mila hai)
     // ============================================================
+    const studentData = [
+        // Example Data - Isse hata kar apna paste kar dena
+        { "reg": "229301029", "course": "CSE2101", "room": "LHC 212", "seat": "R1-C1 (1)" },
+        { "reg": "229301276", "course": "CSE2101", "room": "LHC 212", "seat": "R2-C1 (2)" }
+    ];
+    // ============================================================
+
+    // Create Grid
 const studentData = [
   { "reg": "229301364", "course": "CS3142", "room": "LHC 212", "seat": "R1-C1 (1)" },
   { "reg": "229301369", "course": "CS3142", "room": "LHC 212", "seat": "R2-C1 (2)" },
@@ -1143,18 +1151,6 @@ const studentData = [
   { "reg": "2427030622", "course": "CSE2122", "room": "LHC 216", "seat": "R2-C2 (7)" },
   { "reg": "2427030385", "course": "CSE2122", "room": "LHC 216", "seat": "R3-C2 (8)" }
 ];
-    // ============================================================
-
-    // Create Grid
-    const grid = document.getElementById('seatGrid');
-    for (let r = 1; r <= 5; r++) {
-        for (let c = 1; c <= 6; c++) {
-            let seatDiv = document.createElement('div');
-            seatDiv.classList.add('seat');
-            seatDiv.id = `R${r}-C${c}`;
-            grid.appendChild(seatDiv);
-        }
-    }
 
     function findSeat() {
         const reg = document.getElementById('regInput').value.trim();
