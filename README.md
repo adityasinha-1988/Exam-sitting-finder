@@ -29,7 +29,7 @@ The unique feature of this project is the **Visual Seat Map**, which highlights 
 * **Hosting:** GitHub Pages.
 
 ## 📸 Screenshots
-*(You can upload screenshots of your website here)*
+SS.JPG
 ## 👨‍💻 Developed By
 **Aditya Sinha**
 * Department of Computer Science & Engineering
