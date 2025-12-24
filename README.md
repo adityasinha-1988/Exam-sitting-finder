@@ -2,34 +2,52 @@
 
 ![Project Status](https://img.shields.io/badge/Status-Live-brightgreen)
 ![University](https://img.shields.io/badge/Manipal%20University-Jaipur-orange)
+![Department](https://img.shields.io/badge/Dept-CSE-blue)
 
-### 🔗 [Live Demo Link](https://adityasinha-1988.github.io/CSE-Exam-sitting-finder/)
+### 🔗 [Click Here to View Live Website](https://adityasinha-1988.github.io/CSE-Exam-sitting-finder/)
+
+---
 
 ## 📖 Overview
-**CSE Exam Seating Finder** is a web-based portal designed to simplify the examination process for students at **Manipal University Jaipur**. Instead of searching through long PDF lists on notice boards, students can simply enter their **Registration Number** and **Course Code** to instantly find their allotted **Room Number** and **Seat Number**.
+**CSE Exam Seating Finder** is a web-based portal developed exclusively for the **Department of Computer Science & Engineering (CSE)** at **Manipal University Jaipur**.
 
-The unique feature of this project is the **Visual Seat Map**, which highlights the exact location of the student's seat in the exam hall relative to the entry/exit doors.
+This tool solves the chaos of finding exam seats on notice boards. Students can simply enter their **Registration Number** and **Course Code** to instantly get their **Room Number** and **Seat Number**.
+
+The highlight of this project is the **Interactive Visual Map**, which shows the student exactly where to sit inside the classroom relative to the entry/exit doors.
+
+---
+
+## 📸 Screenshots
+### 🖥️ Desktop View
+![Website Preview](SS.JPG)
+
+---
 
 ## ✨ Key Features
-* 🔍 **Instant Search:** Fast filtering based on Registration No. & Course Code.
-* 🗺️ **Visual Classroom Map:** dynamic generation of the seating layout (5x6 Grid).
-* 📍 **Seat Highlighting:** The allocated seat glows Green with a "YOU" marker.
-* 🚪 **Accurate Layout:** Visualizes Entry/Exit doors (Left-wall orientation) and Whiteboard position.
-* 📱 **Mobile Responsive:** Works perfectly on smartphones and desktops.
-* 🧩 **Column-Wise Logic:** Reflects the actual exam filling pattern (Column 1 fills first, then Column 2, etc.).
+* 🔍 **Instant Search:** Get results in milliseconds by entering Registration No. & Course Code.
+* 🗺️ **Visual Classroom Map:** A dynamic 5x6 seating grid that visualizes the room layout.
+* 📍 **Smart Highlighting:** The allocated seat pulses in **Green** with a "YOU" marker for easy identification.
+* 🚪 **Accurate Orientation:** Displays **Entry** and **Exit** doors on the left wall to help students orient themselves.
+* 📱 **Mobile Responsive:** Fully optimized for smartphones, tablets, and desktops.
+* 🧩 **Column-Wise Logic:** Reflects the actual exam seating pattern (filling front-to-back, column by column).
+
+---
 
 ## 🚀 How It Works
 1.  **Data Processing:** Exam data is processed from Excel sheets using a custom **VBA Script** to generate a lightweight JSON dataset (`student_data.js`).
-2.  **Frontend Logic:** The web interface reads this data and matches the student's input.
-3.  **Visualization:** JavaScript dynamically renders the classroom grid and highlights the specific seat coordinates (e.g., R2-C3).
+2.  **Input:** The student enters their details on the website.
+3.  **Logic:** The JavaScript engine searches the dataset and retrieves the allocated Room and Seat.
+4.  **Visualization:** The code generates a visual grid of the classroom and highlights the specific seat coordinates (e.g., `R2-C3`).
+
+---
 
 ## 🛠️ Tech Stack
 * **Frontend:** HTML5, CSS3 (Animations & Grid Layout), JavaScript (ES6).
-* **Data Handling:** Excel VBA (for JSON generation).
+* **Data Handling:** Excel VBA (for JSON generation) & JSON.
 * **Hosting:** GitHub Pages.
 
-## 📸 Screenshots
-SS.JPG
+---
+
 ## 👨‍💻 Developed By
 **Aditya Sinha**
 * Department of Computer Science & Engineering
